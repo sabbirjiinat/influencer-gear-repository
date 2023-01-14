@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
 /*----------------------------
  common style & utility 
  --------------------------- */
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+
 }
 
 
@@ -16,39 +18,40 @@ body{
  ---------------------------  */
 
 
-.navbar{
-    /* background-color: rgb(79, 161, 233); */
-    height: 145px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.navbar {
+   /* background-color: rgb(79, 161, 233); */
+   height: 145px;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
 
 }
 
 
-.navbar-title{
-    font-weight: 700;
-    font-size: 24px;
-    color:  #3A3A3A;;
-}
-
-
-
-.ul-items{
-    display: flex;
-    list-style: none;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-
-
-.ul-items a{
-    text-decoration: none;
-    padding: 0px 20px;
+.navbar-title {
+   font-weight: 700;
+   font-size: 24px;
    color: #3A3A3A;
- 
+   ;
+}
+
+
+
+.ul-items {
+   display: flex;
+   list-style: none;
+   font-size: 16px;
+   font-weight: 600;
+}
+
+
+
+.ul-items a {
+   text-decoration: none;
+   padding: 0px 20px;
+   color: #3A3A3A;
+
 }
 
 
@@ -57,75 +60,294 @@ body{
  ---------------------------- */
 
 
- 
-
- .influencer-journey-container{
-    display: flex;
-    justify-content: space-around;
-    /* background-color: bisque; */
- }
 
 
-
- .influencer-journey{
-    width: 582px;
-    height: 270px;
- }
-
-
- .influencer-title{
-    width: 582px;
-    height: 133px;
-    font-weight: 700;
-    font-size: 52px;  
-    color: #3A3A3A; 
- }
-
-
- .influencer-description{
-    font-weight: 600;
-    font-size: 16px;
-    color: #3A3A3A;
-    margin-bottom: 20px;
- }
-
-
- .influencer-btn{
-    background: #E02C6D;
-    border-radius: 41px;
-    padding: 10px 24px;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 16px;
-    border: none;
- }
-
-
- .fa-arrow-right.arrow-right{
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 16px;
-
- }
+.influencer-journey-container {
+   display: flex;
+   justify-content: space-around;
+   /* background-color: bisque; */
+}
 
 
 
+.influencer-journey {
+   width: 582px;
+   height: 270px;
+}
 
- /* ----------------------------
+
+.influencer-title {
+   width: 582px;
+   height: 133px;
+   font-weight: 700;
+   font-size: 52px;
+   color: #3A3A3A;
+}
+
+
+.influencer-description {
+   font-weight: 600;
+   font-size: 16px;
+   color: #3A3A3A;
+   margin-bottom: 20px;
+}
+
+
+.influencer-btn {
+   background: #E02C6D;
+   border-radius: 41px;
+   padding: 10px 24px;
+   color: #FFFFFF;
+   font-weight: 700;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+}
+
+
+.fa-arrow-right.arrow-right {
+   color: #FFFFFF;
+   font-weight: 700;
+   font-size: 16px;
+
+}
+
+
+
+
+/* ----------------------------
  E commarse Site 
  ------------------------------ */
 
 
- hr{
-    width: 70%;
- }
+hr {
+   width: 70%;
+}
 
 
- .e-commerse-sites{
-    width: 70%;
-    height: 110px;
-    display: flex;
-    align-items:center;
-    justify-content:space-around;
-    margin: auto;
- }
+.e-commerse-sites {
+   width: 70%;
+   height: 110px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin: auto;
+}
+
+
+/* ----------------------------
+ popular collection 
+ ------------------------------- */
+
+
+.popular-collection {
+   box-shadow: 0px 0px 40px rgb(235, 227, 216);
+   border-radius: 5px;
+   padding: 20px;
+   height: 450px;
+
+
+
+}
+
+.popular-collections {
+   background-color: rgb(252, 251, 250);
+   margin-top: 50px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+
+}
+
+
+
+
+.popular-collection-container {
+   width: 1047px;
+   height: 1662px;
+   /* background-color: rgb(184, 165, 165); */
+   margin: auto;
+   margin-top: 100px;
+
+}
+
+
+.collection-header {
+   width: fit-content;
+   margin: auto;
+
+}
+
+
+.popular-collection img {
+   border-radius: 5px;
+}
+
+
+.collection-title {
+   font-size: 28px;
+   color: #18191F;
+   width: 250px;
+   height: fit-content;
+   position: relative;
+   bottom: 20px;
+}
+
+.prise {
+   position: relative;
+   bottom: 40px;
+   font-weight: 400;
+   font-size: 24px;
+
+}
+
+.rating-container {
+   display: flex;
+   align-items: center;
+   position: relative;
+   bottom: 70px;
+
+}
+
+.fa-star.golden {
+   color: #FB8200;
+}
+
+.fa-star.grey-star {
+   color: #5E6366;
+}
+
+.rating {
+   margin-left: 8px;
+   font-size: 14px;
+   color: #5E6366;
+   font-weight: 700;
+}
+
+.collection-detail {
+   color: #787885;
+   font-size: 14px;
+   height: 61px;
+   font-family: 'Inter', sans-serif;
+   width: 130px;
+   position: relative;
+   bottom: 100px;
+}
+
+
+
+
+/*--------------------------------
+product sectio 
+----------------------------------- */
+
+
+.fetured-froduct-container {
+   /* width: 85%;
+   margin: auto;
+   background-color: #E02C6D; */
+}
+
+
+
+.product {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+
+.product-img img {}
+
+
+.product-title {
+   font-size: 38px;
+   color: #0A0826;
+   width: 610px;
+   height: 60px;
+   font-weight: 700;
+}
+
+
+.product-details {
+   width: 501px;
+   height: 88px;
+   font-weight: 700;
+   font-size: 16px;
+   color: #6C6C6C;
+}
+
+
+.product-button {
+   padding: 10px 24px;
+   background: #E02C6D;
+   width: 155px;
+   height: 44px;
+   font-weight: 700;
+   font-size: 16px;
+   color: #FFFFFF;
+   border: none;
+   position: relative;
+   bottom: 10px;
+}
+
+
+.fa-arrow-right.product-arrow{
+   color: white;
+   margin-left: 10px;
+}
+
+
+
+
+/*---------------------------
+footer style 
+------------------------------ */
+
+
+
+.footer{
+   margin-top: 50px;
+   background: #0A0826;
+   height: 30vh;
+   color: white;
+   overflow: hidden;
+}
+
+
+.footer-title{
+   font-weight: 600;
+   font-size: 24px; 
+}
+
+.copy-right{
+   font-weight: 500;
+font-size: 14px;
+position: relative;
+bottom: 30px;
+
+}
+
+.copy-left{
+   position: relative;
+   bottom: 50px;
+}
+
+
+.influencer{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+.icon{
+   width: 150px;
+   display: flex;
+  justify-content: space-between;
+  margin: auto;
+  position: relative;
+  bottom: 40px;
+
+
+}
